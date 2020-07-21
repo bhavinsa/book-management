@@ -1,0 +1,755 @@
+{
+	"info": {
+		"_postman_id": "41f8cbee-c6ff-429b-bf49-275e96e4bbfe",
+		"name": "book-management",
+		"description": "A Sample application using Typescipt-rest library",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "permission",
+			"item": [
+				{
+					"name": "{id}",
+					"item": [
+						{
+							"name": "Permission Get",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/permission/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"permission",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "<string>",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Ok",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/permission/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"permission",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"name\": \"<string>\",\n \"_id\": \"<string>\",\n \"createdAt\": \"<dateTime>\",\n \"updatedAt\": \"<dateTime>\",\n \"__v\": \"<double>\"\n}"
+								}
+							]
+						},
+						{
+							"name": "Permission Update",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"<string>\",\n    \"_id\": \"<string>\",\n    \"createdAt\": \"<dateTime>\",\n    \"updatedAt\": \"<dateTime>\",\n    \"__v\": \"<double>\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/permission/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"permission",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "<string>",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Ok",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/permission/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"permission",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "\"laborum cupidatat tempor culpa\""
+								}
+							]
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Permission Create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n    {\n        \"name\": \"<string>\",\n        \"_id\": \"<string>\",\n        \"createdAt\": \"<dateTime>\",\n        \"updatedAt\": \"<dateTime>\",\n        \"__v\": \"<double>\"\n    },\n    {\n        \"name\": \"<string>\",\n        \"_id\": \"<string>\",\n        \"createdAt\": \"<dateTime>\",\n        \"updatedAt\": \"<dateTime>\",\n        \"__v\": \"<double>\"\n    }\n]"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/permission",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"permission"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Ok",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/permission",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"permission"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "\"laborum cupidatat tempor culpa\""
+						}
+					]
+				},
+				{
+					"name": "Permission Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n    {\n        \"name\": \"<string>\",\n        \"_id\": \"<string>\",\n        \"createdAt\": \"<dateTime>\",\n        \"updatedAt\": \"<dateTime>\",\n        \"__v\": \"<double>\"\n    },\n    {\n        \"name\": \"<string>\",\n        \"_id\": \"<string>\",\n        \"createdAt\": \"<dateTime>\",\n        \"updatedAt\": \"<dateTime>\",\n        \"__v\": \"<double>\"\n    }\n]"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/permission",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"permission"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Ok",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/permission",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"permission"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "\"laborum cupidatat tempor culpa\""
+						}
+					]
+				},
+				{
+					"name": "Permission List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/permission/:recordsByPage/:page/:sort",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"permission",
+								":recordsByPage",
+								":page",
+								":sort"
+							],
+							"variable": [
+								{
+									"key": "recordsByPage",
+									"value": "<double>",
+									"description": "(Required) "
+								},
+								{
+									"key": "page",
+									"value": "<double>",
+									"description": "(Required) "
+								},
+								{
+									"key": "sort",
+									"value": "<string>",
+									"description": "(Required) "
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Ok",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/permission/:recordsByPage/:page/:sort",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"permission",
+										":recordsByPage",
+										":page",
+										":sort"
+									],
+									"variable": [
+										{
+											"key": "recordsByPage"
+										},
+										{
+											"key": "page"
+										},
+										{
+											"key": "sort"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "[\n {\n  \"name\": \"<string>\",\n  \"_id\": \"<string>\",\n  \"createdAt\": \"<dateTime>\",\n  \"updatedAt\": \"<dateTime>\",\n  \"__v\": \"<double>\"\n },\n {\n  \"name\": \"<string>\",\n  \"_id\": \"<string>\",\n  \"createdAt\": \"<dateTime>\",\n  \"updatedAt\": \"<dateTime>\",\n  \"__v\": \"<double>\"\n }\n]"
+						}
+					]
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "sample-controller",
+			"item": [
+				{
+					"name": "{id}",
+					"item": [
+						{
+							"name": "Sample Get",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/book/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"book",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5f16ff42cfff98161075770c"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Ok",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/sample-controller/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"sample-controller",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"name\": \"<string>\",\n \"_id\": \"<string>\",\n \"createdAt\": \"<dateTime>\",\n \"updatedAt\": \"<dateTime>\",\n \"__v\": \"<double>\"\n}"
+								}
+							]
+						},
+						{
+							"name": "Sample Update",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "\n    {\n        \"name\": \"Live with Free Updewqeweeewated\",\n        \"author\": \"bhavin\",\n        \"uniqueId\": \"ASD123\",\n        \"publishDate\": \"15-06-2020\",\n        \"bookCover\": \"Test bookCover\"\n    }\n"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/book/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"book",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5f170904aa2ecb41ac8c2769",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Ok",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/sample-controller/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"sample-controller",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "\"laborum cupidatat tempor culpa\""
+								}
+							]
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Sample Create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n    {\n        \"name\": \"Live with Free\",\n        \"author\": \"bhavin\",\n        \"uniqueId\": \"ASD123\",\n        \"publishDate\": \"15-06-2020\",\n        \"bookCover\": \"Test bookCover\"\n    }\n]"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/book",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"book"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Ok",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/sample-controller",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"sample-controller"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "\"laborum cupidatat tempor culpa\""
+						}
+					]
+				},
+				{
+					"name": "Sample Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{baseUrl}}/book/:id",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"book",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "5f16ff36cfff98161075770b"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Ok",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/sample-controller",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"sample-controller"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "\"laborum cupidatat tempor culpa\""
+						}
+					]
+				},
+				{
+					"name": "Sample List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/book/:recordsByPage/:page/:sort/:keyword",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"book",
+								":recordsByPage",
+								":page",
+								":sort",
+								":keyword"
+							],
+							"variable": [
+								{
+									"key": "recordsByPage",
+									"value": "5",
+									"description": "(Required) "
+								},
+								{
+									"key": "page",
+									"value": "1",
+									"description": "(Required) "
+								},
+								{
+									"key": "sort",
+									"value": "DESC",
+									"description": "(Required) "
+								},
+								{
+									"key": "keyword",
+									"value": "Free"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Ok",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/sample-controller/:recordsByPage/:page/:sort",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"sample-controller",
+										":recordsByPage",
+										":page",
+										":sort"
+									],
+									"variable": [
+										{
+											"key": "recordsByPage"
+										},
+										{
+											"key": "page"
+										},
+										{
+											"key": "sort"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "[\n {\n  \"name\": \"<string>\",\n  \"_id\": \"<string>\",\n  \"createdAt\": \"<dateTime>\",\n  \"updatedAt\": \"<dateTime>\",\n  \"__v\": \"<double>\"\n },\n {\n  \"name\": \"<string>\",\n  \"_id\": \"<string>\",\n  \"createdAt\": \"<dateTime>\",\n  \"updatedAt\": \"<dateTime>\",\n  \"__v\": \"<double>\"\n }\n]"
+						}
+					]
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Get All",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "{{baseUrl}}/book/all",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"book",
+						"all"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Ok",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/health",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"health"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "text",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "text/html"
+						}
+					],
+					"cookie": [],
+					"body": "laborum cupidatat tempor culpa"
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "8d272629-5d40-4431-af1f-76b43af53a89",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "37d100f8-ecf1-438c-9f95-d0345d44621b",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "ee86718d-0e70-40ba-9c73-46a570d9fa46",
+			"key": "baseUrl",
+			"value": "http://localhost:7000"
+		}
+	],
+	"protocolProfileBehavior": {}
+}
