@@ -1,0 +1,34 @@
+{
+  "extends": [
+    "tslint:recommended",
+    "tslint-config-prettier"
+  ],
+  "rules": {
+    "array-type": [
+      true,
+      "generic"
+    ],
+    "no-string-literal": false,
+    "ordered-imports": false,
+    "variable-name": false,
+    "object-literal-shorthand": [
+      true,
+      "never"
+    ],
+    "quotemark": [
+      true,
+      "single"
+    ],
+    "object-literal-sort-keys": false,
+    "only-arrow-functions": false,
+    "interface-name": false,
+    "max-classes-per-file": false,
+    "no-var-requires": false,
+    "ban-types": false,
+    "no-unused-expression": true,
+    "semicolon": [
+      true,
+      "always"
+    ]
+  }
+}
