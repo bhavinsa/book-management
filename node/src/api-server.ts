@@ -7,6 +7,7 @@ import * as path from 'path';
 import { PassportAuthenticator, Server } from 'typescript-rest';
 import { Singleton, AutoWired } from 'typescript-ioc';
 import 'reflect-metadata';
+import logger from './logger';
 @Singleton
 @AutoWired
 export class ApiServer {
@@ -33,7 +34,7 @@ export class ApiServer {
                 }
                 // TODO: replace with Morgan call
                 // tslint:disable-next-line:no-console
-                console.log(`Listening to http://127.0.0.1:${this.PORT}`);
+                logger.info(`Listening to http://127.0.0.1:${this.PORT}`);
                 return resolve();
             });
         });

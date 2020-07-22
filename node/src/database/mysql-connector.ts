@@ -1,4 +1,5 @@
 import {createConnection, Connection, ConnectionOptions} from 'typeorm';
+import logger from '../logger';
 
 const path = require('path');
 
@@ -37,7 +38,7 @@ export class MySqlConnector {
 				// here you can start to work with your entities
 				MySqlConnector.mySqlConnection = connection;
 				// tslint:disable-next-line:no-console
-				console.log('MySQL connected...');
+				logger.info('MySQL connected...');
 				resolve();
 			}).catch(reject);
         });

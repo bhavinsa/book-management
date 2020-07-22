@@ -1,4 +1,5 @@
 import {createConnection, Connection, ConnectionOptions} from 'typeorm';
+import logger from '../logger';
 
 const path = require('path');
 
@@ -36,7 +37,7 @@ export class PostgresConnector {
 				// here you can start to work with your entities
 				PostgresConnector.postgresConnection = connection;
 				// tslint:disable-next-line:no-console
-				console.log('Postgres connected...');
+				logger.info('Postgres connected...');
                 resolve();
 			}).catch(reject);
         });

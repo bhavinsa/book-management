@@ -3,9 +3,8 @@ import * as mongoose from 'mongoose';
 import {Connection, ConnectionOptions, createConnection} from 'typeorm';
 
 const path = require('path');
-
+import logger from '../logger';
 /**
- * @author val.rudi
  * &
  * @author bhavin
  */
@@ -53,7 +52,7 @@ export class MongoConnector {
                     process.env.MONGODB_URI;
                 // TODO: winston
                 // tslint:disable-next-line:no-console
-                console.log('MongoDB connected [%s]', db);
+                logger.info('MongoDB connected [%s]', db);
 				resolve();
 			}).catch(reject);
         });

@@ -57,7 +57,6 @@ export class RestApiService {
 
   // HttpClient API put() method => Update employee
   updateBook(id, data): Observable<Book> {
-    console.log(JSON.stringify(data));
     return this.http.put<Book>(this.apiURL + '/book/' + id, JSON.stringify(data), this.httpOptions)
       .pipe(
         retry(1),
