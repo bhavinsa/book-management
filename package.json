@@ -1,9 +1,9 @@
 {
-  "name": "ac-node-generic-crud",
+  "name": "book management",
   "version": "0.0.1",
-  "description": "Generic CRUD project for awesome typescript-rest library",
-  "author": "Lucas Alves Teixeira <lucas.teixeira@avenuecode.com>",
-  "repository": "https://github.com/avenuecode/ac-node-generic-crud.git",
+  "description": "Generic CRUD project",
+  "author": "Bhavin Patel",
+  "repository": "",
   "license": "MIT",
   "scripts": {
     "client": "npm start --prefix client",
