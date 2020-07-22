@@ -15,6 +15,7 @@ import { FormsModule } from '@angular/forms';
 import { CreateComponent } from './create/create.component';
 import { BookEditComponent } from './edit/edit.component';
 import { ListComponent } from './list/list.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { ListComponent } from './list/list.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
