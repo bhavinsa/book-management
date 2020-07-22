@@ -6,8 +6,12 @@
   "repository": "https://github.com/avenuecode/ac-node-generic-crud.git",
   "license": "MIT",
   "scripts": {
+    "client": "npm start --prefix client",
+    "start": "concurrently \"npm run server\" \"npm run client",
+    "client-install": "npm install --prefix client",
+    "server-install": "npm install",
     "tsc": "tsc",
-    "start": "ts-node-dev src/index.ts",
+    "server": "ts-node-dev src/index.ts",
     "start:in:docker": "node dist/index.js",
     "start:cluster": "./node_modules/.bin/ts-node src/cluster.ts",
     "build": "npm run clean && tsc && npm run swagger",
@@ -20,6 +24,7 @@
     "swagger": "swaggerGen -c ./swagger.config.yml"
   },
   "dependencies": {
+    "concurrently": "^5.2.0",
     "cors": "^2.8.5",
     "dotenv": "8.0.0",
     "express": "^4.17.1",

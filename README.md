@@ -1,8 +1,22 @@
 # About this project
 
-```It has an initial setup for creating APIs and support for testing using Mocha and Chai.```
+```Book Management```
 
-```It already uses some development configurations like TSLint, clustered server instances, middleware and connection to some databases like MongoDB, Postgres, and MySQL by TypeORM.```
+# Initial setup
+```
+npm run client-install
+npm run server-install
+npm install -g ts-node-dev
+```
+
+# Project run
+```
+npm run start
+```
+
+Open http://localhost:4200/list in browser
+
+`npm run start` will start both client and backend services.
 
 # NoSQL Database
 For object id in NoSQL use ```@ObjectIdColumn()``` in class BaseModel (```base.model.ts```)
@@ -33,19 +47,12 @@ $ docker exec -it postgres-host bash
 $ psql -d postgres -U postgres 
 ```
 
-# Initial setup
-```
-npm install
-```
+
 ## Swagger Docs Generation
 ```
 npm run swagger
 ```
-# Project run
-```
-npm install -g ts-node-dev
-npm run start
-```
+
 ## Start project in cluster
 ```
 npm start:cluster
@@ -58,5 +65,5 @@ npm run test
 ```
 npm run test:coverage
 ```
-The coverage report will be saved under ```./reports/coverage``` folder.
+
 
