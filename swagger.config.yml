@@ -3,8 +3,9 @@ swagger:
   entryFile: 
     - ./src/controllers/*
   outputFormat: OpenApi_3
-  name: Avenue Code Generic CRUD Application
-  description: A Sample application using Typescipt-rest library
+  host: localhost:7000
+  name: CRUD Application
+  description: A Sample application using Typescript-rest library
   license: MIT
   produces: [application/json]
   version: 0.0.1
